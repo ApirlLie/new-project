@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+<!-- 默认配置 -->
+	<default-config>
+	<property name = "username">scott</property>
+	<property name = "password">Scott123456</property>	
+	<property name = "driver">oracle.jdbc.OracleDriver</property>
+	<property name = "url">oracle:jdbc:thin:@localhost:1521:orcl</property>
+	<property name = "checkoutTimeout">20000</property>
+	<property name = "initialPoolSize">10 </property>
+	<property name = "maxIdleTime">15</property>
+	<property name = "maxPoolSize">20</property>
+	<property name = "minPoolSize">5</property>
+	</default-config>
+	<name-config name = "usually">
+	<property name = "initialPoolSize">10</property>
+	<property name = "maxPoolSize">20</property>
+	<property name = "driver">oracle.jdbc.OracleDriver</property>
+	<property name = "url">oracle:jdbc:thin:@localhost:1521:orcl</property>
+	</name-config>
+
+</c3p0-config>

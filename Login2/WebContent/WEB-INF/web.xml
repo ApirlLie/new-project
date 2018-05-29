@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Login2</display-name>
+  <servlet>
+    <servlet-name>AddStudentServlet</servlet-name>
+    <servlet-class>org.lanqiao.servlet.AddStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddStudentServlet</servlet-name>
+    <url-pattern>/AddStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>org.lanqiao.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>QueryAllStudentServlet</servlet-name>
+    <servlet-class>org.lanqiao.servlet.QueryAllStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryAllStudentServlet</servlet-name>
+    <url-pattern>/QueryAllStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>deleteByNoServlet</servlet-name>
+    <servlet-class>org.lanqiao.servlet.DeleteByNoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteByNoServlet</servlet-name>
+    <url-pattern>/deleteByNoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>DeleteByNoservlet</servlet-name>
+    <servlet-class>org.lanqiao.servlet.DeleteByNoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteByNoservlet</servlet-name>
+    <url-pattern>/DeleteByNoservlet</url-pattern>
+  </servlet-mapping>
+ 
+ 
+  <resource-ref>
+    <description>DataSource</description>
+    <res-ref-name>student</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
+  
+  <servlet>
+    <description></description>
+    <servlet-name>UpdateStudentServlet</servlet-name>
+    <servlet-class>org.lanqiao.servlet.UpdateStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudentServlet</servlet-name>
+    <url-pattern>/UpdateStudentServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
